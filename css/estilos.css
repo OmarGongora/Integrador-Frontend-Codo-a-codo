@@ -1,0 +1,504 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.outline{
+    outline:solid red 1px;
+}
+/* Header */
+
+header{
+    background-color: #353a40;
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    width: 100%;
+    z-index: 20000;
+}
+
+.LogoNombre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+
+.LogoNombre img{
+    width: 100px;
+}
+
+.LogoNombre p{
+    color: white;
+    font-weight: 500;
+}
+
+.ContenedorBotones{
+    width: 80%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    margin-right: 60px;
+}
+
+
+.ContenedorBotones a{
+    
+    color: #70827b;
+    margin: 30px 8px;
+    padding: 8px;
+    transition: all .3s;
+}
+.ContenedorBotones a:hover{
+    background-color: #535856;
+    border-radius: 20px;
+}
+
+.ContenedorBotones a:first-child{
+    color: white;
+}
+
+.ContenedorBotones a:last-child{
+    color: #2aa045;
+}
+.ContenedorBotones a:last-child:hover{
+    background-color: #506956;
+}
+
+
+/* Header */
+
+/* Main */
+
+/* Banner */
+
+    .Banner{
+        width: 100%;
+        height: 650px;
+        position: relative;
+    }
+
+    .Banner img{
+        width: 100%;
+        height: 100%;
+        filter: brightness(.5);
+        z-index: 50;
+    }
+
+    .BannerContenido{
+        z-index: 70;
+
+        position: absolute;
+        top: 0;
+        right: 120px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 40px;
+
+        height: 100%;
+    }
+
+    .BannerContenido *{
+        width:45%;
+        color: white;
+        text-align: right;
+    }
+
+    .BannerContenido p{
+        
+        line-height: 26px;
+        font-weight: 500;
+    }
+
+    .BannerBotones *{
+        margin: auto 5px;
+    }
+
+    .BannerBotones a:first-child{
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 10px 20px;
+        transition: all .4s;
+    }
+    .BannerBotones a:first-child:hover{
+        background-color: white;
+        color: black;
+    }
+
+
+    .BannerBotones a:last-child{
+        background-color: #29a744;
+        border: #29a744 1px solid;
+        border-radius: 5px;
+        padding: 10px 20px;
+        transition: all .4s;
+    }
+    .BannerBotones a:last-child:hover{
+        background-color: #208335;
+        border: #208335 1px solid;
+    }
+
+/* Banner */
+
+/* Tarjetas Oradores */
+
+    .Oradores{
+        width: 100%;
+        margin: 20px auto;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Presentacion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+
+    .ContenedorTarjetas{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .Tarjeta{
+        width: 300px;
+        border: rgb(224, 224, 224) solid 1px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .Tarjeta img{
+        width: 100%;
+    }
+    .TarjetaInfo{
+        align-self: center;
+        width: 90%;
+        margin: 15px auto;
+    }
+    .TarjetaInfo h3{
+        font-weight: 500;
+        margin: 5px auto 15px;
+    }
+    .TarjetaInfo p{
+        font-size: 14px;
+        line-height: 26px;
+        color: rgb(78, 78, 78);
+    }
+
+    .SpanJs{
+        background-color: #fdc007;
+        color: black;
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 12px;
+    }
+    .SpanR{
+        background-color: #17a2b9;
+        color: white;
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 12px; 
+    }
+    .SpanN{
+        background-color: #69757c;
+        color: white;
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 12px; 
+    }
+    .SpanS{
+        background-color: #dc3546;
+        color: white;
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 12px; 
+    }
+
+/* Tarjetas Oradores */
+
+/* Ubicacion */
+
+    .Ubicacion{
+        background-color: #353a40;
+        margin: 50px auto;
+        display: flex;
+    }
+
+
+    .Ubicacion img{
+        width: 50%;
+    }
+
+
+    .UbicacionInfo * {
+        margin: 20px;
+        color: white;
+        line-height: 26px;
+        font-weight: 500;
+        
+    }
+    .UbicacionInfo a{
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 10px 15px;
+        transition: all .4s;
+    }
+    .UbicacionInfo a:hover{
+        background-color: white;
+        color: black;
+    }
+/* Ubicacion */
+
+/* Reclutamiento */
+
+    .Reclutar{
+        width: 70%;
+        margin: auto;
+    }
+
+    .Registro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Nombre{
+        width: 100%;
+        margin: 20px;
+    }
+
+    .Nombre form {
+        display: flex;
+        justify-content: space-between;
+    }
+    .Nombre form input{
+        width: 47%;
+    }
+    input{
+        padding: 10px;
+        border: #e4e4e4 1px solid;
+        border-radius: 5px;
+    }
+    .Mensaje{
+        width: 100%;
+    }
+    .Mensaje  input{
+        width: 100%;
+        height: 100px;
+    }
+    .Mensaje  input::placeholder{
+        font-size: 18px;
+    }
+    .Registro p{
+        align-self: flex-start;
+        padding: 5px 10px;
+        font-size: 13px;
+        color: #808080;
+    }
+    
+    button{
+        width: 100%;
+        padding: 10px;
+        margin: 5px auto;
+        color: white;
+        font-size: 19px;
+        background-color: #96c93e;
+        border: 1px solid #96c93e;
+        border-radius: 6px;
+    }
+    
+    
+    
+    
+/* Reclutamiento */
+
+/* Main */
+   
+
+
+/* Footer */
+
+footer{
+    background-image: linear-gradient(to right,#1c3643,#1d5271 );
+    height: 100px;
+    margin-top: 40px;
+}
+
+footer div{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div a{
+    color: white;
+}
+/* Footer */
+
+
+
+@media screen and (max-width:800px){
+ /* Header */
+    header{
+        border-bottom: 5px solid #353a40;
+        position:static;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .LogoNombre{
+        width: 30%;
+    }
+    
+    .ContenedorBotones{
+        width: 100%;
+        justify-content:center;
+        margin: 0;
+        padding: 0;
+    }
+    .ContenedorBotones a{
+        margin: 0px 8px;
+    }
+ /* header */
+
+ /* Main */
+
+ /* banner */
+
+    .BannerContenido{
+        right: 0px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .BannerContenido *{
+        text-align: center;
+    }
+
+    .BannerBotones{
+        height: 150px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+ /* banner */
+ /* Main */
+
+
+ /* Footer */
+
+    footer div{
+        width: 100%;
+
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }   
+/* Footer */
+
+
+
+
+
+
+
+}
+
+
+@media screen and (max-width:500px){
+
+ /* Header */
+        .LogoNombre{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ContenedorBotones{
+            width: 100%;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+
+        .ContenedorBotones a{
+            
+            color: #70827b;
+            margin: 3px 8px;
+        }
+    /* Header*/
+
+     /* Main*/
+
+    /*banner*/
+
+        .BannerContenido *{
+            width: 80%;
+        }
+    /*banner*/
+
+    /*ubicacion*/
+        .Ubicacion{
+            flex-direction: column;
+        }
+
+        .Ubicacion img{
+            width: 100%;
+        }
+
+        .UbicacionInfo{
+            margin: 20px auto;
+        }
+
+    /*ubicacion*/
+
+    /*Main*/
+
+
+
+    /*Footer*/
+
+        footer div{
+            width: 100%;
+
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }  
+
+        footer div a{
+            margin: 0 5px;
+        }
+    /*Footer*/
+
+
+
+}
