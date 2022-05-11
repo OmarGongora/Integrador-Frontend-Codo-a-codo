@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Integrador Frontend</title>
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
     
 </head>
@@ -14,23 +15,27 @@
     <header>
 
         <div class="LogoNombre">
-            <img src="Img/codoacodo.png" alt="Logo de codo a codo">
+            <div>
+                <img src="Img/codoacodo.png" alt="Logo de codo a codo">
 
-            <p>Conf Bs As</p>
+                <p>Conf Bs As</p>
+            </div>
+            <i class="fa-solid fa-bars menu" id="menu"></i>
         </div>
+        
 
-        <div class="ContenedorBotones ">
-            <a href="#banner">La conferencia</a>
+        <div class="ContenedorBotones" id="contenedorBotones">
+            <a href="./index.html">La conferencia</a>
             <a href="#Oradores">Los oradores</a>
             <a href="#ubicacion">El lugar y la fecha</a>
             <a href="#formulario">Conviértete en orador</a>
-            <a href="" class="BotonCompra">Comprar tickets</a>
+            <a href="./comprarTickets.html" class="BotonCompra">Comprar tickets</a>
         </div>
 
     </header>
 
     <main>
-       
+
         <div class="Banner" id="banner">
             <img src="./Img/ba1.jpg" alt="">
 
@@ -104,7 +109,7 @@
 
 
         </div>
-          
+        
         <div class="Ubicacion" id="ubicacion">
 
 
@@ -176,6 +181,8 @@
 
     </footer>
 
+
+    <script src="./js/app.js"></script>
 
 </body>
 </html>

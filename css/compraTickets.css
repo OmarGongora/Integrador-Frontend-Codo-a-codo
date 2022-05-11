@@ -1,0 +1,200 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.planes{
+    margin-top: 40px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.cardPlan{
+    border: 1px solid #0c80fd;
+
+    width: 250px;
+    height: 230px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+/* -------------------- */
+.cardPlan:hover{
+    transition: ease-in-out .3s;
+    
+    transform:translateY(-3px);
+}
+.cardPlan:hover *{
+    transition: ease-in-out .3s;
+    color: white;
+    z-index: 70;
+}
+.cardPlan::before{
+    z-index: 60;
+    content: "";
+    
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    background-color: #0c80fd;
+    position: absolute;
+    top: -430px;
+    left: -430px;
+    transition: ease-in-out 1s;
+}
+.cardPlan:hover::before{
+    top:-100px;
+    left:-100px;
+}
+
+.junior::before{
+    background-color: #ffd864;
+}
+
+
+
+
+
+
+
+
+
+/* -------------------- */
+.cardPlan h3{
+    color: #212428;
+}
+.descuento{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.presDoc{
+    color:#8e86ac;
+    font-size: .9em;
+}
+.junior{
+    border: solid 2px #ffd864;
+}
+/* ------------------------- */
+
+.formVenta{
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.formVenta h2{
+    font-size: .9em;
+    font-weight: 200;
+}
+.formVenta h3{
+    font-size: 2em;
+}
+
+.formVenta form{
+    margin: auto;
+    width: 68%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.in50{
+    width: 49%;
+}
+.in100{
+    width: 100%;
+}
+
+
+.nombre{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.infoEntradas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cantidad{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.categoria{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+select{
+    padding: 10px;
+    border: #e4e4e4 1px solid;
+    border-radius: 5px;
+}
+
+label{
+    padding: 0 0 5px 5px;
+}
+
+
+
+.mostrarPrecio{
+    width: 100%;
+    margin: 20px auto;
+    text-align: start;
+    
+    padding: 17px 23px;
+    
+    color: #49697c;
+    background-color: #cbe5fe;
+    border-radius: 5px;
+}
+.mostrarPrecioError{
+    width: 100%;
+    margin: 20px auto;
+    text-align: start;
+    
+    padding: 17px 23px;
+    
+    color: #ac6949;
+    background-color: #eaa5ac;
+    border-radius: 5px;
+}
+
+.botones{
+    width: 100%;
+    margin: auto;
+}
+
+.menu{
+    display: none;
+}
+
+/* ------- media queries */
+
+@media screen and (max-width:600px){
+    .formVenta form{
+        width: 90%;
+    }
+
+
+
+}

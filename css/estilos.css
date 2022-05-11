@@ -6,8 +6,8 @@
     text-decoration: none;
 }
 
-.outline{
-    outline:solid red 1px;
+.active{
+    top: 60px;
 }
 /* Header */
 
@@ -15,18 +15,31 @@ header{
     background-color: #353a40;
     display: flex;
     justify-content: space-between;
-    position:fixed;
+    position:relative;
     width: 100%;
-    z-index: 20000;
+    z-index: 200;
 }
 
 .LogoNombre{
+    background-color: #353a40;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 20%;
+    z-index: 190;
+}
+.LogoNombre div{
+    display: flex;
+    align-items: center;
 }
 
+.menu{
+    font-size: 1.8em;
+    color: white;
+    display: none;
+    opacity: 0;
+    position: absolute;
+}
 
 .LogoNombre img{
     width: 100px;
@@ -38,11 +51,12 @@ header{
 }
 
 .ContenedorBotones{
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content:flex-end;
     align-items: center;
-    margin-right: 60px;
+    margin-right: 50px;
+    z-index: 100;
 }
 
 
@@ -80,6 +94,8 @@ header{
         width: 100%;
         height: 650px;
         position: relative;
+        
+        z-index: 30;
     }
 
     .Banner img{
@@ -300,6 +316,12 @@ header{
         border: #e4e4e4 1px solid;
         border-radius: 5px;
     }
+    input:focus{
+        outline: #54e454 2px solid ;
+    }
+    select:focus{
+        outline: #54e454 2px solid ;
+    }
     .Mensaje{
         width: 100%;
     }
@@ -326,6 +348,15 @@ header{
         background-color: #96c93e;
         border: 1px solid #96c93e;
         border-radius: 6px;
+        transition: linear .3s;
+    }
+    button:hover{
+        background-color: #86b92e;
+        cursor: pointer;
+        transform: translateY(-3px);
+    }
+    button:active{
+        transform: translateY(3px);
     }
     
     
@@ -334,7 +365,7 @@ header{
 /* Reclutamiento */
 
 /* Main */
-   
+
 
 
 /* Footer */
@@ -361,8 +392,8 @@ footer div a{
 /* Footer */
 
 
-
 @media screen and (max-width:800px){
+
  /* Header */
     header{
         border-bottom: 5px solid #353a40;
@@ -414,6 +445,8 @@ footer div a{
  /* Footer */
     footer{
         height: auto;
+        display: relative;
+        top: 0;
     }
 
     footer div{
@@ -426,33 +459,53 @@ footer div a{
         padding: 10px 5px;
     }
 /* Footer */
-
-
-
-
-
-
-
 }
+
+
 
 
 @media screen and (max-width:500px){
 
  /* Header */
-        .LogoNombre{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 50%;
+        header{
+            justify-content: flex-start;
+            align-items: flex-start;
+            
         }
 
+        .LogoNombre {
+            width: 100%;
+            justify-content: space-between;
+        }
+        .LogoNombre div{
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+        .menu{
+            padding: 15px;
+            display:block;
+            opacity: 1;
+            position: inherit;
+        }
+        
         .ContenedorBotones{
+            
             width: 100%;
             display: flex;
-            justify-content:center;
+            justify-content:flex-start;
             flex-direction: column;
-            align-items: center;
-            flex-wrap: wrap;
+            align-items: flex-end;
+            padding-right: 20px;
+            
+            height: 250px;
+            background-color: #353a40;
+            
+            position: absolute;
+            top: -400px;
+            
+            transition: linear .4s;
+            z-index: 40;
         }
 
 
@@ -463,7 +516,7 @@ footer div a{
         }
     /* Header*/
 
-     /* Main*/
+    /* Main*/
 
     /*banner*/
 
@@ -514,7 +567,8 @@ footer div a{
             padding: 10px 5px;
         }
     /*Footer*/
+}
 
-
-
+.active{
+    top: 60px;
 }
