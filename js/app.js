@@ -1,3 +1,4 @@
+
 let precioEntradas = (precio,cantidad) =>{return precio * cantidad} 
 
 let valorTicket = 200;
