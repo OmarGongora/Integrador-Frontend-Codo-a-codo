@@ -14,7 +14,7 @@
 }
 
 .cardPlan{
-    border: 1px solid #0c80fd;
+    border: 2px solid #0c80fd;
 
     width: 250px;
     height: 230px;
@@ -60,6 +60,9 @@
 .junior::before{
     background-color: #ffd864;
 }
+.trainee::before{
+    background-color: #0c8d08;
+}
 
 
 
@@ -80,6 +83,9 @@
 .presDoc{
     color:#8e86ac;
     font-size: .9em;
+}
+.trainee{
+    border:solid 2px #0c8d08;
 }
 .junior{
     border: solid 2px #ffd864;
